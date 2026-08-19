@@ -432,7 +432,7 @@ code structure, challenges faced, and AI assistance used during development.
 
 [▶️ Watch / Download Exercise 2 Video](./videos/Exercise-2-Medical-Travel-Expense.mp4)
 
-> Note: GitHub may not preview large MP4 files directly in the browser.
+> Note: GitHub may not preview the MP4 files directly because of their file size. You can click View **raw** or use the download option to download and watch the videos.
 > The videos are included in the repository and can be downloaded using the links above.
 
 # 👩‍💻 Author
