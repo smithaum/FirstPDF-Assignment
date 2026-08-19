@@ -1,7 +1,3 @@
-Absolutely. Since this is going into a **GitHub repository for an assignment**, we can make the README look much more professional without making it unnecessarily huge.
-
-Replace your current `README.md` with this:
-
 ````markdown
 # PDF Generation Assignment
 
