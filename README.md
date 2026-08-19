@@ -1,7 +1,3 @@
-Absolutely. Since this is going into a **GitHub repository for an assignment**, we can make the README look much more professional without making it unnecessarily huge.
-
-Replace your current `README.md` with this:
-
 ````markdown
 # PDF Generation Assignment
 
@@ -419,7 +415,7 @@ CSS dimensions, margins, padding, typography, and positioning were iteratively a
 | A4 layout             | ✅      |
 | Browser demonstration | ✅      |
 | AI prompt history     | ✅      |
-| Narrated video        | ⏳      |
+| Narrated video        | ✅      |
 
 ---
 
@@ -436,20 +432,3 @@ Computer Science Engineering Student
 This project was developed specifically for the assigned PDF recreation task. The implementation focuses on reproducing the structure and behaviour of the provided reference documents using standard web technologies.
 
 ````
-
-### One small change I recommend
-
-Don't put your **actual GitHub repository link** into the README yet. Once we create the repository, we can add a proper **Live Demo / Repository** section if needed.
-
-Your root folder should now look like:
-
-```text
-FirstPDF-Assignment
-│
-├── exercise-1
-├── exercise-2
-├── README.md
-└── AI-PROMPT-HISTORY.md
-````
-
-The **next thing we should do is create `AI-PROMPT-HISTORY.md`**, because the assignment explicitly asks for it. After that, we'll push the whole folder to GitHub.
