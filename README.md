@@ -1,4 +1,3 @@
-````markdown
 # PDF Generation Assignment
 
 > A web-based recreation of two provided PDF documents using HTML, CSS, and JavaScript, with a focus on accurate layout, dynamic content generation, and A4 document presentation.
@@ -13,9 +12,9 @@ The objective was to recreate the provided PDF documents as responsive web-based
 
 Both exercises were implemented using:
 
-- HTML5
-- CSS3
-- JavaScript
+* HTML5
+* CSS3
+* JavaScript
 
 The implementation includes dynamic data generation, structured layouts, images, tables, headers, footers, page numbers, and A4-sized pages.
 
@@ -25,24 +24,24 @@ The implementation includes dynamic data generation, structured layouts, images,
 
 The main objectives of this assignment were to:
 
-- Recreate the provided PDF layouts using web technologies.
-- Maintain the visual structure and alignment of the original documents.
-- Implement A4-sized document layouts.
-- Generate content dynamically using JavaScript.
-- Support different amounts of dynamic data.
-- Reproduce headers, footers, tables, page numbers, and images.
-- Keep the code organized and reusable.
-- Test the generated documents using different datasets.
+* Recreate the provided PDF layouts using web technologies.
+* Maintain the visual structure and alignment of the original documents.
+* Implement A4-sized document layouts.
+* Generate content dynamically using JavaScript.
+* Support different amounts of dynamic data.
+* Reproduce headers, footers, tables, page numbers, and images.
+* Keep the code organized and reusable.
+* Test the generated documents using different datasets.
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|------------|---------|
-| **HTML5** | Document structure and content |
-| **CSS3** | Layout, styling, A4 page design, tables and positioning |
-| **JavaScript** | Dynamic content generation and data handling |
+| Technology     | Purpose                                                 |
+| -------------- | ------------------------------------------------------- |
+| **HTML5**      | Document structure and content                          |
+| **CSS3**       | Layout, styling, A4 page design, tables and positioning |
+| **JavaScript** | Dynamic content generation and data handling            |
 
 ---
 
@@ -52,23 +51,23 @@ The first exercise recreates the **Worker Progress Report** document provided as
 
 ### Key Features
 
-- A4 page layout
-- WCB logo
-- Report header
-- Claim number
-- Worker information
-- Dynamic checkbox selections
-- Return-to-work information
-- Recovery information
-- Medical treatment information
-- Medication information
-- Home exercise information
-- Additional information section
-- Footer
-- Worker App ID
-- Submission date
-- Page numbers
-- Multi-page document structure
+* A4 page layout
+* WCB logo
+* Report header
+* Claim number
+* Worker information
+* Dynamic checkbox selections
+* Return-to-work information
+* Recovery information
+* Medical treatment information
+* Medication information
+* Home exercise information
+* Additional information section
+* Footer
+* Worker App ID
+* Submission date
+* Page numbers
+* Multi-page document structure
 
 ### Dynamic Behaviour
 
@@ -86,22 +85,22 @@ The second exercise recreates the **Medical & Travel Expense Request** document.
 
 ### Key Features
 
-- A4 page layout
-- WCB logo and organization details
-- Claim number
-- Worker information
-- Prescription drug table
-- Over-the-counter drug table
-- Medical supplies table
-- Parking expense table
-- Mileage table
-- Bus and taxi fare table
-- Privacy notice
-- Footer
-- Worker App ID
-- Submission date
-- Page numbers
-- Two-page document structure
+* A4 page layout
+* WCB logo and organization details
+* Claim number
+* Worker information
+* Prescription drug table
+* Over-the-counter drug table
+* Medical supplies table
+* Parking expense table
+* Mileage table
+* Bus and taxi fare table
+* Privacy notice
+* Footer
+* Worker App ID
+* Submission date
+* Page numbers
+* Two-page document structure
 
 ### Dynamic Tables
 
@@ -126,20 +125,8 @@ const reportData = {
     workerName: "Madeleine Wilson",
     claimNumber: "20042047"
 };
-````
-
-For table-based information, arrays are used:
-
-```javascript
-const prescriptionDrugs = [
-    {
-        drugName: "Naproxen",
-        prescriptionDate: "February 28, 2024",
-        datePurchased: "February 29, 2024",
-        paidAmount: "$20.00"
-    }
-];
 ```
+
 
 JavaScript functions then generate the corresponding HTML content dynamically.
 
