@@ -1,0 +1,634 @@
+/* =========================================================
+   EXERCISE 2
+   MEDICAL & TRAVEL EXPENSE REQUEST
+   A4 PDF STYLE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    color: #000;
+}
+
+
+/* =========================================================
+   A4 PAGE
+========================================================= */
+
+.page {
+    position: relative;
+
+    width: 210mm;
+    height: 297mm;
+
+    margin: 15px auto;
+
+    padding: 11mm 6mm 16mm 6mm;
+
+    background: #fff;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.report-header {
+    display: grid;
+
+    grid-template-columns: 62mm 56mm 1fr;
+
+    align-items: start;
+
+    width: 100%;
+
+    min-height: 34mm;
+
+    margin-bottom: 5mm;
+}
+
+
+/* LOGO */
+
+.logo-area {
+    display: flex;
+
+    align-items: flex-start;
+}
+
+.logo-area img {
+    width: 42mm;
+    height: auto;
+
+    display: block;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-info {
+    padding-top: 1mm;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 14px;
+
+    color: #222;
+}
+
+
+/* REPORT TITLE */
+
+.report-title {
+    padding-top: 0;
+
+    text-align: left;
+}
+
+.report-title h1 {
+    margin: 0 0 3mm 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+
+    line-height: 19px;
+
+    font-weight: 600;
+}
+
+
+/* CLAIM NUMBER */
+
+.claim-box {
+    display: inline-block;
+
+    padding: 2.2mm 3mm;
+
+    border: 2px solid #000;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.intro {
+    margin: 0 0 5mm 0;
+
+    font-size: 12px;
+
+    line-height: 16px;
+}
+
+.worker-name {
+    color: #55778c;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.report-section {
+    margin: 0 0 5mm 0;
+}
+
+.report-section h2 {
+    margin: 0 0 4mm 0;
+
+    font-size: 17px;
+
+    line-height: 19px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.expense-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-size: 9px;
+
+    line-height: 11px;
+}
+
+.expense-table th,
+.expense-table td {
+    border: 1.2px solid #000;
+
+    padding: 2.2mm 1.5mm;
+
+    vertical-align: middle;
+
+    text-align: left;
+
+    overflow-wrap: break-word;
+
+    word-break: normal;
+}
+
+.expense-table th {
+    font-weight: normal;
+
+    background: #fff;
+
+    height: 10mm;
+}
+
+.expense-table td {
+    color: #244f70;
+
+    height: 10mm;
+}
+
+
+/* =========================================================
+   PRESCRIPTION DRUGS
+========================================================= */
+
+.prescription-table th:nth-child(1),
+.prescription-table td:nth-child(1) {
+    width: 20%;
+}
+
+.prescription-table th:nth-child(2),
+.prescription-table td:nth-child(2) {
+    width: 17%;
+}
+
+.prescription-table th:nth-child(3),
+.prescription-table td:nth-child(3) {
+    width: 17%;
+}
+
+.prescription-table th:nth-child(4),
+.prescription-table td:nth-child(4) {
+    width: 36%;
+}
+
+.prescription-table th:nth-child(5),
+.prescription-table td:nth-child(5) {
+    width: 10%;
+}
+
+
+/* =========================================================
+   OVER THE COUNTER
+========================================================= */
+
+.otc-table th:nth-child(1),
+.otc-table td:nth-child(1) {
+    width: 20%;
+}
+
+.otc-table th:nth-child(2),
+.otc-table td:nth-child(2) {
+    width: 20%;
+}
+
+.otc-table th:nth-child(3),
+.otc-table td:nth-child(3) {
+    width: 13%;
+}
+
+.otc-table th:nth-child(4),
+.otc-table td:nth-child(4) {
+    width: 23%;
+}
+
+.otc-table th:nth-child(5),
+.otc-table td:nth-child(5) {
+    width: 24%;
+}
+
+
+/* =========================================================
+   MEDICAL SUPPLIES
+========================================================= */
+
+.supplies-table th:nth-child(1),
+.supplies-table td:nth-child(1) {
+    width: 19%;
+}
+
+.supplies-table th:nth-child(2),
+.supplies-table td:nth-child(2) {
+    width: 10%;
+}
+
+.supplies-table th:nth-child(3),
+.supplies-table td:nth-child(3) {
+    width: 10%;
+}
+
+.supplies-table th:nth-child(4),
+.supplies-table td:nth-child(4) {
+    width: 23%;
+}
+
+.supplies-table th:nth-child(5),
+.supplies-table td:nth-child(5) {
+    width: 12%;
+}
+
+.supplies-table th:nth-child(6),
+.supplies-table td:nth-child(6) {
+    width: 26%;
+}
+
+
+/* =========================================================
+   PARKING
+========================================================= */
+
+.parking-table th:nth-child(1),
+.parking-table td:nth-child(1) {
+    width: 38%;
+}
+
+.parking-table th:nth-child(2),
+.parking-table td:nth-child(2) {
+    width: 17%;
+}
+
+.parking-table th:nth-child(3),
+.parking-table td:nth-child(3) {
+    width: 13%;
+}
+
+.parking-table th:nth-child(4),
+.parking-table td:nth-child(4) {
+    width: 12%;
+}
+
+.parking-table th:nth-child(5),
+.parking-table td:nth-child(5) {
+    width: 20%;
+}
+
+
+/* =========================================================
+   MILEAGE
+========================================================= */
+
+.mileage-section {
+    margin-top: 1mm;
+}
+
+.note {
+    margin: 0 0 4mm 0;
+
+    font-size: 10px;
+
+    line-height: 13px;
+}
+
+.mileage-table th:nth-child(1),
+.mileage-table td:nth-child(1) {
+    width: 15%;
+}
+
+.mileage-table th:nth-child(2),
+.mileage-table td:nth-child(2) {
+    width: 33%;
+}
+
+.mileage-table th:nth-child(3),
+.mileage-table td:nth-child(3) {
+    width: 30%;
+}
+
+.mileage-table th:nth-child(4),
+.mileage-table td:nth-child(4) {
+    width: 22%;
+}
+
+
+/* =========================================================
+   PAGE 2
+========================================================= */
+
+/*
+   The original PDF's second page does NOT repeat
+   the WCB header. It starts directly with:
+   "Bus or Taxi Fare for Medical Appointments*"
+*/
+
+.page-2 {
+    padding-top: 14mm;
+}
+
+.page-2 .report-header {
+    display: none;
+}
+
+
+/* BUS / TAXI */
+
+.bus-taxi-section {
+    margin-top: 0;
+}
+
+.bus-taxi-section h2 {
+    margin-bottom: 3mm;
+}
+
+.bus-taxi-section .note {
+    margin-bottom: 5mm;
+}
+
+
+/* BUS / TAXI TABLE */
+
+.bus-taxi-table {
+    font-size: 9px;
+
+    line-height: 11px;
+}
+
+.bus-taxi-table th,
+.bus-taxi-table td {
+    padding: 2.5mm 1.5mm;
+}
+
+.bus-taxi-table th {
+    height: 12mm;
+}
+
+.bus-taxi-table td {
+    height: 15mm;
+}
+
+.bus-taxi-table th:nth-child(1),
+.bus-taxi-table td:nth-child(1) {
+    width: 16%;
+}
+
+.bus-taxi-table th:nth-child(2),
+.bus-taxi-table td:nth-child(2) {
+    width: 25%;
+}
+
+.bus-taxi-table th:nth-child(3),
+.bus-taxi-table td:nth-child(3) {
+    width: 31%;
+}
+
+.bus-taxi-table th:nth-child(4),
+.bus-taxi-table td:nth-child(4) {
+    width: 13%;
+}
+
+.bus-taxi-table th:nth-child(5),
+.bus-taxi-table td:nth-child(5) {
+    width: 15%;
+}
+
+
+/* =========================================================
+   PRIVACY NOTICE
+========================================================= */
+
+.privacy-section {
+    position: absolute;
+
+    left: 6mm;
+    right: 6mm;
+
+    bottom: 31mm;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 3mm;
+
+    font-size: 11px;
+
+    line-height: 15px;
+}
+
+.privacy-section input {
+    width: 13px;
+    height: 13px;
+
+    margin: 1px 0 0 0;
+
+    flex-shrink: 0;
+}
+
+.privacy-link {
+    color: #28739b;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.report-footer {
+    position: absolute;
+
+    left: 6mm;
+    right: 6mm;
+
+    bottom: 7mm;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: end;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    line-height: 10px;
+
+    color: #111;
+}
+
+.report-footer span:nth-child(1) {
+    text-align: left;
+}
+
+.report-footer span:nth-child(2) {
+    text-align: center;
+}
+
+.report-footer span:nth-child(3) {
+    text-align: right;
+}
+
+
+/* =========================================================
+   PAGE 1 SPACING
+========================================================= */
+
+.page-1 .report-section:nth-of-type(1) {
+    margin-bottom: 5mm;
+}
+
+.page-1 .report-section:nth-of-type(2) {
+    margin-bottom: 5mm;
+}
+
+.page-1 .report-section:nth-of-type(3) {
+    margin-bottom: 5mm;
+}
+
+.page-1 .report-section:nth-of-type(4) {
+    margin-bottom: 5mm;
+}
+
+.page-1 .mileage-section {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PRINT
+========================================================= */
+
+@media print {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+
+        background: #fff;
+    }
+
+    .page {
+        margin: 0;
+
+        width: 210mm;
+        height: 297mm;
+
+        box-shadow: none;
+
+        page-break-after: always;
+
+        break-after: page;
+    }
+
+    .page:last-child {
+        page-break-after: auto;
+
+        break-after: auto;
+    }
+}
+
+
+/* =========================================================
+   SCREEN
+========================================================= */
+
+@media screen {
+
+    .page {
+        min-height: 297mm;
+    }
+}
+
+
+/* =========================================================
+   SMALL SCREEN
+========================================================= */
+
+@media screen and (max-width: 850px) {
+
+    .page {
+        transform-origin: top left;
+
+        margin-left: 10px;
+    }
+}
