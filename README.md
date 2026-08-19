@@ -419,6 +419,22 @@ CSS dimensions, margins, padding, typography, and positioning were iteratively a
 
 ---
 
+## 🎥 Demonstration Videos
+
+The following videos demonstrate the implementation, dynamic data handling,
+code structure, challenges faced, and AI assistance used during development.
+
+### Exercise 1 — Worker Progress Report
+
+[▶️ Watch / Download Exercise 1 Video](./videos/Exercise-1-Worker-Progress-Report.mp4)
+
+### Exercise 2 — Medical & Travel Expense Request
+
+[▶️ Watch / Download Exercise 2 Video](./videos/Exercise-2-Medical-Travel-Expense.mp4)
+
+> Note: GitHub may not preview large MP4 files directly in the browser.
+> The videos are included in the repository and can be downloaded using the links above.
+
 # 👩‍💻 Author
 
 **Smitha U M**
